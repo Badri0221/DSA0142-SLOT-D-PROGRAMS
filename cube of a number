@@ -1,0 +1,39 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class cube
+{
+	private :
+	int i,n;
+	public :
+	cube()
+	{
+		i=0;
+		n=1;
+	}
+	cube(int p , int q)
+	{
+		i=p;
+		n=q;
+	}
+	void display()
+	{
+		cout<<"enter the number : "<<endl;
+		cin>>n;
+		for(i=1;i<=n;i++)
+		{
+			cout<<"the cube of"<<i<<"is"<<(i*i*i)<<endl;
+		}
+	}
+	~cube()
+			{
+				cout<<" clear :"<<endl;
+			}
+		};
+int main()
+   {
+   	int p,q;
+	cube obj(p,q);
+	obj.display();
+	getch();
+}
